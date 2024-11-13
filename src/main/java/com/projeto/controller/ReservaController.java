@@ -17,6 +17,8 @@ public class ReservaController {
     @Autowired
     private ReservaService reservaService;
 
+    //
+
     @GetMapping("/usuario/{id_usuario}")
     public ResponseEntity<List<Reserva>> obterReservasPorUsuario(@PathVariable("id_usuario") Long idUsuario) {
         List<Reserva> reservas = reservaService.buscarReservasPorUsuario(idUsuario);
