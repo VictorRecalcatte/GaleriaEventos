@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/test/java/com/projeto/ProjetoApplicationTests.java",
+      "src": "target\demo-0.0.1-SNAPSHOT.jar"
       "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/test/java/com/projeto/ProjetoApplicationTests.java"
+      "dest": "target\demo-0.0.1-SNAPSHOT.jar"
     }
   ]
 }
