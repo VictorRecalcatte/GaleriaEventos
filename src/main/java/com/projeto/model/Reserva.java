@@ -13,8 +13,6 @@ public class Reserva {
     private long id;
     private long id_usuario;
     private long id_evento;
-    private String nome_evento;
-    private String nome_usuario;
 
     public long getId() {
         return id;
@@ -40,19 +38,4 @@ public class Reserva {
         this.id_evento = id_evento;
     }
 
-    public String getNome_evento() {
-        return nome_evento;
-    }
-
-    public void setNome_evento(String nome_evento) {
-        this.nome_evento = nome_evento;
-    }
-
-    public String getNome_usuario() {
-        return nome_usuario;
-    }
-
-    public void setNome_usuario(String nome_usuario) {
-        this.nome_usuario = nome_usuario;
-    }
 }
